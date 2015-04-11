@@ -1,0 +1,11 @@
+{
+	"name": "roasted-peas",
+	"theme": "syntax",
+	"version": "1.0.0",
+	"description": "",
+	"repository": "https://github.com/afj176/roasted-peas",
+	"license": "MIT",
+	"engines": {
+		"atom": ">0.50.0"
+	}
+}
