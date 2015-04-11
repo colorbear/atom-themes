@@ -1,0 +1,239 @@
+// Atom template by Antonio Fernandes (https://github.com/afj176)
+//  Roasted Peas
+// Built with Color Bear (http://color.bear)
+/*
+           .+ydmNNNmdhyo/::/+shmdy+:..`            
+      `/yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMds:/`.     
+    -yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    
+    hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy   
+    +MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM+  
+   .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs
+   :MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMyoyhmMMNddhy+`
+   .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm     --       
+  :mMMMMMMMMMMMMMMMNmmmhNMMMMMMMMMMM-             
+.hMMMMMMMMs`yMMMMMMm   `MMMMMsoMMMMMd             
+mMMMMMNh+`  `mMMMMMd   /MMMMs  -mMMMM:            
+-NMMMo-      `dMMMMN::` sMMMddy:`yMMMdoo+-        
+ `/color-       `#####:  `-:::-   -bear-
+*/
+@import "roasted-peas-syntax-variables.less";
+atom-text-editor, // <- remove when Shadow DOM can't be disabled
+:host {
+  color: @syntax-text-color;
+  background-color: @syntax-background-color;
+  .gutter {
+    color: @syntax-gutter-text-color;
+    background-color: @syntax-gutter-background-color;
+  }
+
+  .gutter .line-number.cursor-line {
+    color: @syntax-gutter-text-color-selected;
+    background-color: @syntax-gutter-background-color-selected;
+  }
+
+  .gutter .line-number.cursor-line-no-selection {
+    color: @syntax-gutter-text-color-selected;
+  }
+
+  .wrap-guide {
+    color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .search-results .marker .region {
+    background-color: transparent;
+    border: @syntax-result-marker-color;
+  }
+
+  .search-results .marker.current-result .region {
+    border: @syntax-result-marker-color-selected;
+  }
+
+  .cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .line-number.cursor-line-no-selection, .line.cursor-line {
+    background-color: rgba(80, 80, 80, 0.33);
+  }
+
+}
+
+.variable.parameter.function {
+  color: #d6ddab;
+}
+
+.comment, .punctuation.definition.comment {
+  color: #9ba461;
+}
+
+.punctuation.definition.string, .punctuation.definition.variable, .punctuation.definition.string, .punctuation.definition.parameters, .punctuation.definition.string, .punctuation.definition.array {
+  color: #d6ddab;
+}
+
+.none {
+  color: #d6ddab;
+}
+
+.keyword.operator {
+  color: #d6ddab;
+}
+
+.keyword {
+  color: #399d89;
+}
+
+.variable {
+  color: #419d39;
+}
+
+.entity.name.function, .meta.require, .support.function.any-method {
+  color: #9d7c39;
+}
+
+.support.class, .entity.name.class, .entity.name.type.class {
+  color: #619d39;
+}
+
+.meta.class {
+  color: #bdc680;
+}
+
+.keyword.other.special-method {
+  color: #9d7c39;
+}
+
+.storage {
+  color: #399d89;
+}
+
+.support.function {
+  color: #399d7f;
+}
+
+.string, .constant.other.symbol, .entity.other.inherited-class {
+  color: #9d3954;
+}
+
+.constant.numeric {
+  color: #9d3939;
+}
+
+.none {
+  color: #9d3939;
+}
+
+.none {
+  color: #9d3939;
+}
+
+.constant {
+  color: #9d3939;
+}
+
+.entity.name.tag {
+  color: #419d39;
+}
+
+.entity.other.attribute-name {
+  color: #9d3939;
+}
+
+.entity.other.attribute-name.id, .punctuation.definition.entity {
+  color: #9d7c39;
+}
+
+.meta.selector {
+  color: #399d89;
+}
+
+.none {
+  color: #9d3939;
+}
+
+.markup.heading .punctuation.definition.heading, .entity.name.section {
+  color: #9d7c39;
+}
+
+.keyword.other.unit {
+  color: #9d3939;
+}
+
+.markup.bold, .punctuation.definition.bold {
+  font-weight: bold;
+  color: #619d39;
+}
+
+.markup.italic, .punctuation.definition.italic {
+  font-style: italic;
+  color: #399d89;
+}
+
+.markup.raw.inline {
+  color: #9d3954;
+}
+
+.string.other.link {
+  color: #419d39;
+}
+
+.meta.link {
+  color: #9d3939;
+}
+
+.markup.list {
+  color: #419d39;
+}
+
+.markup.quote {
+  color: #9d3939;
+}
+
+.meta.separator {
+  color: #d6ddab;
+  background-color: #747a49;
+}
+
+.markup.inserted {
+  color: #9d3954;
+}
+
+.markup.deleted {
+  color: #419d39;
+}
+
+.markup.changed {
+  color: #399d89;
+}
+
+.constant.other.color {
+  color: #399d7f;
+}
+
+.string.regexp {
+  color: #399d7f;
+}
+
+.constant.character.escape {
+  color: #399d7f;
+}
+
+.punctuation.section.embedded, .variable.interpolation {
+  color: #759d39;
+}
+
+.invalid.illegal {
+  color: #bdc680;
+  background-color: #419d39;
+}
