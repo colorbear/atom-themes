@@ -1,0 +1,11 @@
+{
+	"name": "little-mermaid",
+	"theme": "syntax",
+	"version": "1.0.0",
+	"description": "",
+	"repository": "https://github.com/afj176/little-mermaid",
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	}
+}
