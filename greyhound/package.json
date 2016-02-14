@@ -1,0 +1,11 @@
+{
+	"name": "greyhound",
+	"theme": "syntax",
+	"version": "1.0.0",
+	"description": "",
+	"repository": "https://github.com/afj176/greyhound",
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	}
+}
