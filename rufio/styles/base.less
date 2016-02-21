@@ -1,0 +1,247 @@
+// Atom template by Antonio Fernandes (https://github.com/afj176)
+//  Rufio
+// Built with Color Bear (http://colorbear.ninja)
+
+@import "syntax-variables.less";
+:host, atom-text-editor, atom-text-editor::shadow {
+  color: @syntax-text-color;
+  background-color: @syntax-background-color;
+  .gutter {
+    color: @syntax-gutter-text-color;
+    background-color: @syntax-gutter-background-color;
+  }
+
+  .gutter .line-number.cursor-line {
+    color: @syntax-gutter-text-color-selected;
+    background-color: @syntax-gutter-background-color-selected;
+  }
+
+  .has-selection .gutter .line-number.cursor-line {
+    background-color: @syntax-selection-color;
+  }
+
+  .gutter .line-number.cursor-line-no-selection {
+    color: @syntax-gutter-text-color-selected;
+  }
+
+  .wrap-guide {
+    color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .search-results .marker .region {
+    background-color: transparent;
+    border: @syntax-result-marker-color;
+  }
+
+  .search-results .marker.current-result .region {
+    border: @syntax-result-marker-color-selected;
+  }
+
+  .cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .line-number.cursor-line-no-selection, .line.cursor-line {
+    background-color: rgba(80, 80, 80, 0.33);
+  }
+
+  .line.highlight-line {
+    background: @syntax-highlight-line-color !important;
+  }
+
+  .has-selection .line.highlight-line {
+    background: transparent !important;
+  }
+
+  .highlights .highlight-selected .region {
+    background: transparent;
+    border-color: @syntax-highlight-selected-color;
+    border-radius: 2px;
+  }
+
+  .highlights .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .variable.parameter.function {
+    color: #CDBBA7;
+  }
+
+  .comment, .punctuation.definition.comment {
+    color: #c99353;
+  }
+
+  .punctuation.definition.string, .punctuation.definition.variable, .punctuation.definition.string, .punctuation.definition.parameters, .punctuation.definition.string, .punctuation.definition.array {
+    color: #CDBBA7;
+  }
+
+  .none {
+    color: #CDBBA7;
+  }
+
+  .keyword.operator {
+    color: #CDBBA7;
+  }
+
+  .keyword {
+    color: #EBBFA3;
+  }
+
+  .variable {
+    color: #9486cc;
+  }
+
+  .entity.name.function, .meta.require, .support.function.any-method {
+    color: #41B97D;
+  }
+
+  .support.class, .entity.name.class, .entity.name.type.class {
+    color: #D08E6D;
+  }
+
+  .meta.class {
+    color: #D2B99B;
+  }
+
+  .keyword.other.special-method {
+    color: #41B97D;
+  }
+
+  .storage, .storage.type {
+    color: #EBBFA3;
+  }
+
+  .support.function {
+    color: #37566C;
+  }
+
+  .string, .constant.other.symbol, .entity.other.inherited-class {
+    color: #963E13;
+  }
+
+  .constant.numeric {
+    color: #C2DC84;
+  }
+
+  .none {
+    color: #C2DC84;
+  }
+
+  .none {
+    color: #C2DC84;
+  }
+
+  .constant {
+    color: #C2DC84;
+  }
+
+  .entity.name.tag {
+    color: #9486cc;
+  }
+
+  .entity.other.attribute-name {
+    color: #C2DC84;
+  }
+
+  .entity.other.attribute-name.id, .punctuation.definition.entity {
+    color: #41B97D;
+  }
+
+  .meta.selector {
+    color: #EBBFA3;
+  }
+
+  .none {
+    color: #C2DC84;
+  }
+
+  .markup.heading .punctuation.definition.heading, .entity.name.section {
+    color: #41B97D;
+  }
+
+  .keyword.other.unit {
+    color: #C2DC84;
+  }
+
+  .markup.bold, .punctuation.definition.bold {
+    font-weight: bold;
+    color: #D08E6D;
+  }
+
+  .markup.italic, .punctuation.definition.italic {
+    font-style: italic;
+    color: #EBBFA3;
+  }
+
+  .markup.raw.inline {
+    color: #963E13;
+  }
+
+  .string.other.link {
+    color: #9486cc;
+  }
+
+  .meta.link {
+    color: #C2DC84;
+  }
+
+  .markup.list {
+    color: #9486cc;
+  }
+
+  .markup.quote {
+    color: #C2DC84;
+  }
+
+  .meta.separator {
+    color: #CDBBA7;
+    background-color: #463A2D;
+  }
+
+  .markup.inserted {
+    color: #963E13;
+  }
+
+  .markup.deleted {
+    color: #9486cc;
+  }
+
+  .markup.changed {
+    color: #EBBFA3;
+  }
+
+  .constant.other.color {
+    color: #37566C;
+  }
+
+  .string.regexp {
+    color: #37566C;
+  }
+
+  .constant.character.escape {
+    color: #37566C;
+  }
+
+  .punctuation.section.embedded, .variable.interpolation {
+    color: #634ba8;
+  }
+
+  .invalid.illegal {
+    color: #D2B99B;
+    background-color: #9486cc;
+  }
+
+
+}
