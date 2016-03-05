@@ -1,0 +1,11 @@
+{
+	"name": "drove-light",
+	"theme": "syntax",
+	"version": "1.0.0",
+	"description": "",
+	"repository": "https://github.com/afj176/drove-light",
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	}
+}
