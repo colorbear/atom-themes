@@ -1,0 +1,11 @@
+{
+	"name": "rednight",
+	"theme": "syntax",
+	"version": "1.0.0",
+	"description": "",
+	"repository": "https://github.com/colorbear/atom-themes//rednight",
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	}
+}
